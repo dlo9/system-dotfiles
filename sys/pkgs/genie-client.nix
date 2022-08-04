@@ -25,13 +25,15 @@ stdenv.mkDerivation rec {
   pname = "genie-client";
   version = "0.1.0";
 
-  src = fetchFromGitHub {
-    owner = "stanford-oval";
-    repo = pname;
-    rev = "v${version}";
-    fetchSubmodules = true;
-    sha256 = "sha256-JIaePTZsWV6BqipzkM45WByikMwsLIeTk+N+hxyTvUQ=";
-  };
+  #src = fetchFromGitHub {
+  #  owner = "stanford-oval";
+  #  repo = pname;
+  #  rev = "v${version}";
+  #  fetchSubmodules = true;
+  #  sha256 = "sha256-JIaePTZsWV6BqipzkM45WByikMwsLIeTk+N+hxyTvUQ=";
+  #};
+
+  src = /home/david/Downloads/genie/genie-client;
 
   nativeBuildInputs = [
     meson
