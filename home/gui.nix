@@ -649,6 +649,9 @@ in
       # So that links open in a browser when clicked from other applications
       # (e.g. vscode)
       xdg-utils
+
+      # USB installer
+      ventoy-bin
     ];
 
     services = {
